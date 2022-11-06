@@ -1,0 +1,58 @@
+@mixin blockSize ($nb_width, $nb_height){
+	width: $nb_width;
+	height: $nb_height;
+} 
+@mixin image ($imgWidth, $imgHeight){
+	width: $imgWidth;
+	height: $imgHeight;
+}
+@mixin imgStyle{
+	background-size: inherit;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@mixin menuFont($fontFamily, $fontSize, 
+				$fontLineH, $textTrans, $fontColor){
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: $fontLineH;
+	text-transform: $textTrans;
+	color: $fontColor;
+}
+@mixin navBar_border-right{
+	border-right: 1px solid #F4F4F4;
+}
+@mixin navBar_border-left{
+	border-left: 1px solid #F4F4F4;
+}
+@mixin button-reset{
+  padding: 0;
+  border: none;
+
+  border-radius: 0px;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+@mixin link-reset($fontColor){
+	text-decoration: none;
+	outline: none;
+	color: $fontColor;
+}
+@mixin buttonStyle{
+	background: $btnBgColor;
+	border-radius: $radius; 
+}
+@mixin buttonStyleInv{
+	background: $bgColor;
+	border-radius: $radius; 
+	border: 1px solid #0275B1;
+}
+@mixin ppHeaderStyle{
+	@include menuFont($fontFamily, 18px, 17px, none, #181818);
+	margin: 30px 0 0 30px;
+}
+@mixin linkStyle{
+	@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+}

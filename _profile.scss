@@ -1,0 +1,643 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+
+.profile-page{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	@include blockSize (inherit, 1986px);
+	flex: 1 1 auto;
+}
+.avatar-box{
+	@include blockSize (850px, 360px);
+	
+	&_style{
+		background: $bgColor;
+		margin: 120px 0 0 130px;
+		border-radius: $radius;
+}}
+.splash-screen{
+	@include image (inherit, 180px);
+	@include imgStyle;
+	background-image: url(images/profile-page/splach-screen.png);
+	border-radius: $radius $radius 0 0 ;
+}	
+.user-info{
+	@include image (inherit, 180px);
+}
+.avatar{
+	@include image (170px, 170px);
+	@include imgStyle;
+	background-image: url(images/profile-page/Ellipse.png);
+	position: absolute;
+
+	&_style{
+		margin: 160px 0 0 25px;
+}}
+.download-button{
+	@include blockSize (36px, 36px);
+
+	&_style{
+		margin: 20px 0 0 30px;
+		background: rgba(255, 255, 255, 0.9);
+		box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+		border-radius: $radius;
+	}
+	&_image{
+		@include image (16px, 16px);
+		@include imgStyle;
+		background-image: url(images/profile-page/upload.png);
+}}
+.edit-profile{
+	@include blockSize (132px, 36px);
+
+	&:hover{
+		@include link-reset(#181818);
+	}
+	&_style{
+		margin: 20px 0 0 576px;
+		background: rgba(255, 255, 255, 0.9);
+		box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+		border-radius: $radius;
+	}
+	&_image{
+		@include image (16px, 16px);
+		@include imgStyle;
+		background-image: url(images/profile-page/edit.png);
+
+		&_style{
+			margin: 10px 8px 10px 10px;
+	}}
+	&_text{
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		margin-top: 13px;
+}}
+.option-button{
+	@include blockSize (36px, 36px);
+
+	&_style{
+		margin: 20px 0 0 10px;
+		background: rgba(255, 255, 255, 0.9);
+		box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+		border-radius: $radius;
+	}
+	&_image{
+		@include image (24px, 24px);
+		@include imgStyle;
+		background-image: url(images/profile-page/more-horizontal.png);
+}}
+
+.data-box{
+	@include blockSize (600px, 44px);
+	margin: 0 0 0 220px;
+}
+.user-info .data-box:nth-child(2){
+	@include blockSize (600px, 42px);
+	margin: 15px 0 0 220px;
+}
+.user-info .data-box:nth-child(3){
+	@include blockSize (360px, 32px);
+	margin: 14px 0 0 220px;
+}
+.user-name{
+	@include menuFont($fontFamily, 18px, 17px, none, #181818);
+
+	&_style{
+		margin-top: 25px;
+}}
+.logo-yellow{
+	@include image (16px, 16px);
+	@include imgStyle;
+	background-image: url(images/profile-page/logo-yellow.png);
+
+	&_style{
+		margin: 24px 0 0 8px;
+}}
+.geo-image{
+	@include image (13px, 13px);
+	@include imgStyle;
+	background-image: url(images/profile-page/geo.png);
+
+	&_style{
+		margin: 28px 0 0 189px;
+}}
+.user-location{
+	@include menuFont($fontFamily, 12px, 150%, none, #181818);
+
+	&_style{
+		margin: 26px 0 0 8px;
+}}
+.user-about{
+	@include blockSize (600px, 42px);
+
+	&_style{
+		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+}}
+.button{
+	@include blockSize (170px, 32px);
+
+	&_style{
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #FFFFFF);
+		@include buttonStyle;
+}}
+.button-inv{
+	@include blockSize (170px, 32px);
+
+	&_style{
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+		@include buttonStyleInv;
+		margin-left: 15px;
+}}
+.bookmark-box{
+	@include blockSize (850px, 250px);
+
+	&_style{
+		margin: 21px 0 0 130px;
+}}
+.bookmark-field{
+	@include blockSize (inherit, 50px);
+
+	&_style{
+		border-bottom: 1px solid #E7E7E7;
+}}
+.bookmark{
+	@include blockSize (240px, 40px);
+	&_style{
+		background: $bgColor;
+		border: 1px solid #E7E7E7;
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+	}
+	&:focus{
+		height:	50px;
+		background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+		border-radius: $radius $radius 0px 0px;
+		color: $bgColor;
+}}
+.about-field{
+	@include blockSize (850px, 170px);
+
+	&_style{
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header{
+		@include ppHeaderStyle;
+	}	
+	&_text{
+		@include blockSize (790px, 42px);
+		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+		margin: 15px 0 0 30px;
+	}
+	&_link{
+		@include linkStyle;
+		margin: 20px 0 0 30px;
+
+		&:hover{
+			@include link-reset(#0275B1);
+}}}
+.projects-box{
+	@include blockSize (850px, 355px);
+
+	&_style{
+		margin: 20px 0 0 130px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header-field{
+		@include blockSize (150px, 17px);
+		margin: 30px 0 0 30px;
+
+		&_header{
+			@include ppHeaderStyle;
+			margin: 0;
+		}
+		&_counter{
+			margin-left: 15px;
+			@include menuFont($fontFamily, 18px, 17px, none, #747474);
+	}}
+	&_center-field{
+		@include blockSize (790px, 216px);
+		margin: 25px 0 0 30px;
+	}
+	&_link{
+		@include linkStyle;
+		margin: 25px 0 0 30px;
+
+		&:hover{
+			@include link-reset(#0275B1);
+}}}
+.project-card{
+	@include blockSize (250px, inherite);
+
+	&_image{
+		@include image (inherit, 160px);
+		@include imgStyle;
+
+		&-1{
+			background-image: url(images/profile-page/zara.png);
+		}
+		&-2{
+			background-image: url(images/profile-page/scthon.png);
+		}
+		&-3{
+			background-image: url(images/profile-page/drozd.png);
+		}
+	}
+	&_header{
+		margin-top: 15px;
+		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+	}
+	&_description{
+		margin-top: 5px;
+		@include menuFont($fontFamily, 10px, 15px, none, #181818);
+}}
+.skills-box{
+	@include blockSize (850px, 220px);
+
+	&_style{
+		margin: 20px 0 0 130px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header{
+		@include ppHeaderStyle;
+	}
+	&_center-field{
+		@include blockSize (790px, 80px);
+		margin: 24px 0 0 30px;
+
+		&_card{
+			@include blockSize (250px, 80px);
+			background: $bgColor;
+			border: 1px solid #F4F4F4;
+			border-radius: 6px;
+
+			&_header-field{
+				@include blockSize (210px, 21px);
+				margin: 14px 0 0 20px;
+
+				&_header{
+					@include menuFont($fontFamily, 14px, 21px, none, #181818);
+
+				}
+				&_counter{
+					@include menuFont($fontFamily, 14px, 21px, none, #0275B1);
+				}
+			}
+			&_graphic-field{
+				@include blockSize (210px, 24px);
+				margin: 5px 0 0 20px;
+	}}}
+	&_image{
+		@include image (24px, inherit);
+		@include imgStyle;
+		position: relative;
+
+		&-1{
+			background-image: url(images/profile-page/guest1.png);
+			z-index: 1;
+		}
+		&-2{
+			background-image: url(images/profile-page/guest2.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-3{
+			background-image: url(images/profile-page/guest3.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-4{
+			background-image: url(images/profile-page/guest4.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-5{
+			background-image: url(images/profile-page/guest5.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-6{
+			background-image: url(images/profile-page/guest6.png);
+			z-index: 1;
+		}
+		&-7{
+			background-image: url(images/profile-page/guest7.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-8{
+			background-image: url(images/profile-page/guest8.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&-9{
+			background-image: url(images/profile-page/guest9.png);
+			z-index: 1;
+		}
+		&-10{
+			background-image: url(images/profile-page/guest10.png);
+			margin-left: -9px;
+			z-index: 1;
+		}
+		&_counter{
+			background: #0275B1;
+			border-radius: 26px;
+			margin-left: -9px;
+			z-index: 1;
+			@include menuFont($fontFamily, 10px, 10px, uppercase, #FFFFFF);
+	}}
+	&_link{
+		@include linkStyle;
+		margin: 25px 0 0 30px;
+
+		&:hover{
+			@include link-reset(#0275B1);
+}}}
+.experience-box{
+	@include blockSize (850px, 345px);
+
+	&_style{
+		margin: 20px 0 0 130px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header{
+		@include ppHeaderStyle;
+		margin: 30px 0 5px 30px;
+	}
+	&_dataField{
+		@include blockSize (790px, 106px);
+		margin: 20px 0 0 30px;
+
+		&_image{
+			margin-top: 2px;
+			@include image (54px, 54px);
+			@include imgStyle;
+
+			&-1{
+				background-image: url(images/profile-page/logo-globe.png);
+			}
+			&-2{
+				background-image: url(images/profile-page/logo-upwork.png);
+			}
+		}
+		&_dataBox{
+			@include blockSize (719px, inherit);
+			margin-left: 16px;
+
+			&_header{
+				@include menuFont($fontFamily, 14px, 21px, none, #181818);
+			}
+			&_employerField{
+				@include blockSize (200px, 15px);
+				margin-top: 10px;
+
+				&_employerName{
+					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				}
+				&_employerLocation{
+					margin-left: 10px;
+					margin-left: 10px;
+					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+			}}
+			&_periodField{
+				@include blockSize (170px, 15px);
+				margin-top: 5px;
+
+				&_period{
+					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				}
+				&_periodCounter{
+					margin-left: 10px;
+					@include menuFont($fontFamily, 10px, 15px, none, #0275B1);
+				}
+			}
+			&_description{
+				@include blockSize (719px, 30px);
+				margin-top: 10px;
+				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+			}}}
+	&_divisionLine{
+		@include blockSize (790px, 1px);
+		background-color: #F4F4F4;
+		margin: 25px 0 0 30px;
+}}
+.education-box{
+	@include blockSize (850px, 195px);
+
+	&_style{
+		margin: 20px 0 0 130px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header{
+		@include ppHeaderStyle;
+	}
+	&_dataField{
+		@include blockSize (790px, 106px);
+		margin: 25px 0 0 30px;
+
+		&_image{
+			margin-top: 2px;
+			@include image (54px, 54px);
+			@include imgStyle;
+			background-image: url(images/profile-page/logo-mslu.png);	
+		}
+		&_dataBox{
+			@include blockSize (719px, inherit);
+			margin-left: 16px;
+
+			&_header{
+				@include menuFont($fontFamily, 14px, 21px, none, #181818);
+			}
+			&_degree{
+				margin-top: 10px;
+				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+			}
+			&_period{
+				margin-top: 5px;
+				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+			}
+			&_description{
+				margin-top: 10px;
+				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+}}}}
+.dashboard{
+	@include blockSize (290px, 360px);
+
+	&_style{
+		margin: 120px 0 0 40px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_headerField{
+		@include blockSize (231px, 11px);
+		margin: 25px 0 0 30px;
+
+		&_header{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		}
+		&_link{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+			text-decoration-line: underline;
+
+			&:hover{
+				@include link-reset(#0275B1);
+	}}}
+	&_divisionLine{
+		@include blockSize (230px, 1px);
+		background-color: #F4F4F4;
+		margin: 20px 0 0 30px;
+	}
+	&_views, &_post, &_search{
+		margin: 20px 0 0 30px;
+		@include menuFont($fontFamily, 52px, 50px, uppercase, #0275B1);
+	}
+	&_text{
+		margin-left: 30px;
+		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+}}
+.visitors{
+	@include blockSize (290px, 427px);
+
+	&_style{
+		margin: 20px 0 0 40px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_headerField{
+		@include blockSize (231px, 11px);
+		margin: 25px 0 0 30px;
+
+		&_header{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		}
+		&_link{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+			
+			&:hover{
+				@include link-reset(#0275B1);
+	}}}
+	&_divisionLine{
+		@include blockSize (230px, 1px);
+		background-color: #F4F4F4;
+		margin: 20px 0 5px 30px;
+	}
+	&_card{
+		@include blockSize (230px, 52px);
+		margin: 15px 0 0 30px;
+
+		&:hover{
+				@include link-reset(#181818);
+			}
+
+		&_image{
+			@include image (52px, 52px);
+			@include imgStyle;
+
+			&-1{
+				background-image: url(images/profile-page/visitor1.png);	
+			}
+			&-2{
+				background-image: url(images/profile-page/visitor2.png);	
+			}
+			&-3{
+				background-image: url(images/profile-page/visitor3.png);	
+			}
+			&-4{
+				background-image: url(images/profile-page/visitor4.png);	
+			}
+			&-5{
+				background-image: url(images/profile-page/visitor5.png);	
+			}
+		}
+		&_textField{
+			height: 33px;
+			margin-left: 16px;
+
+		
+		&_name{
+			@include menuFont($fontFamily, 14px, 13px, none, #181818);
+		}
+		&_position{
+			@include menuFont($fontFamily, 10px, 15px, none, #181818);
+}}}}
+.courses{
+	@include blockSize (290px, 338px);
+
+	&_style{
+		margin: 20px 0 0 40px;
+		background: $bgColor;
+		box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+		border-radius: $radius;
+	}
+	&_header{
+		margin: 25px 0 0 30px;
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+	}
+	&_divisionLine{
+		@include blockSize (230px, 1px);
+		background-color: #F4F4F4;
+		margin: 20px 0 5px 30px;
+	}
+	&_videoCard{
+		margin: 15px 0 0 30px;
+		@include blockSize (230px, 56px);
+
+		&_image{
+			@include image (80px, 52px);
+			@include imgStyle;
+			border-radius: 2px;
+
+			&-1{
+				background-image: url(images/profile-page/course1.png);	
+			}
+			&-2{
+				background-image: url(images/profile-page/course2.png);	
+			}
+			&-3{
+				background-image: url(images/profile-page/course3.png);	
+		}}
+		&_button{
+				@include blockSize (18px, 18px);
+				background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+				border-radius: 2px;
+
+				&_play{
+					margin: 5px 0 0 7px;
+					@include image (5.83px, 7.5px);
+					@include imgStyle;
+					background-image: url(images/profile-page/play.png);
+		}}
+		&_textField{
+			@include blockSize (133px, inherit);
+			margin-left: 16px;
+
+			&:hover{
+				@include link-reset(#181818);
+			}
+			&_name{
+				@include menuFont($fontFamily, 14px, 18px, none, #181818);	
+			}
+			&_viewers{
+				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+	}}}
+	&_link{
+		margin: 25px 0 0 30px;
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+
+		&:hover{
+			@include link-reset(#0275B1);
+}}}
+

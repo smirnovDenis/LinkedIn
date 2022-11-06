@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+ 	 <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+ 	
+
+
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<div class="profile-page">
+
+								<!-- Navigation Bar -->
+
+	<header class="navigationBar navigationBar_style fixed-top d-flex">
+		<!-- Main Logo -->
+		<div class="nb_logoBlock d-flex justify-content-center align-items-center">
+			<div class="nb_logoBlock_image"></div>
+		</div>
+
+		<!-- Navigation Menu -->
+		<div class="nb_menuField d-flex">
+			<ul class="nav">
+				<!-- Menu Item 1 -->
+  				<li class="nav-item"><a class="nav-link d-flex flex-column align-items-center" href="#"><div class="nb_menuField_image"></div>Feed</a></li>
+  				<!-- Menu Item 2 -->
+  				<li class="nav-item"><a class="nav-link d-flex flex-column align-items-center" href="#"><div class="nb_menuField_image"></div>Network</a></li>
+  				<!-- Menu Item 3 -->
+  				<li class="nav-item"><a class="nav-link d-flex flex-column align-items-center" href="#"><div class="nb_menuField_image"></div>Jobs</a></li>
+  				<!-- Menu Item 4 -->
+  				<li class="nav-item"><a class="nav-link d-flex flex-column align-items-center" href="#"><div class="nb_menuField_image"></div>Chat</a></li>
+				<!-- Menu Item 5 -->
+  				<li class="nav-item"><a class="nav-link d-flex flex-column align-items-center" href="#"><div class="nb_menuField_image"></div>Notices</a></li>
+			</ul>
+		</div>
+
+		<!-- Search Dropdown Menu -->
+		 <div class="dropdown">
+    <button type="button" class="search-btn d-flex align-items-center" data-toggle="dropdown"><div class="search-btn_image"></div>Search
+  	</button>
+  
+    <div class="dropdown-menu">
+    	<div class="dropdown-field d-flex flex-column">
+  					<!-- Search Field -->
+  					<div class="search-field d-flex align-items-center">
+  						<form class="search-items d-flex align-items-center">
+  							<!-- Search Input -->
+      						<input type="text" placeholder="UX desig" name="search">
+      						<!-- Search Button -->
+      						<button type="submit" class="search-field_button d-flex justify-content-center align-items-center">
+      							<div class="search-field_button_image"></div>
+      						</button>
+    					</form>
+  					</div>
+  					<!-- Jobs Section-->
+  					<div class="section-name">Jobs</div>
+  					<a href="#" class="search-result d-flex align-items-center">
+  						<div class="search-result_img search-result_img1"></div>
+  						<div class="text-field d-flex flex-column align-items-between">
+  							<div class="text-field_header"> <strong>UX</strong>/UI <strong>Desig</strong>ner</div>
+  							<div class="text-field_description">Upwork</div>
+  						</div>
+  						<div class="search-result_img search-result_img5"></div>
+  					</a>
+  					<a href="#" class="search-result d-flex align-items-center">
+  						<div class="search-result_img search-result_img2"></div>
+  						<div class="text-field d-flex flex-column align-items-between">
+  							<div class="text-field_header">Part-time <strong>UX designer</strong></div>
+  							<div class="text-field_description">Google</div>
+  						</div>
+  						<div class="search-result_img search-result_img5"></div>
+  					</a>
+  					<a href="#" class="search-result_stat">All jobs (84)</a>
+
+    				<div class="division-line"></div>
+
+    					<!-- Users Section-->
+    					<div class="section-name">Users</div>
+  						<a href="#" class="search-result d-flex align-items-center">
+  							<div class="search-result_img search-result_img3"></div>
+  							<div class="text-field d-flex flex-column align-items-between">
+  								<div class="text-field_header">Brendon Wilson</div>
+  								<div class="text-field_description">Senior <strong>UX desig</strong>ner</div>
+  							</div>
+  							<div class="search-result_img search-result_img5"></div>
+  						</a>
+  						<a href="#" class="search-result d-flex align-items-center">
+  							<div class="search-result_img search-result_img4"></div>
+  							<div class="text-field d-flex flex-column align-items-between">
+  								<div class="text-field_header">Kyle Fisher</div>
+  								<div class="text-field_description">Product <strong>desig</strong>ner at Commandor Corp.</div>
+  							</div>
+  							<div class="search-result_img search-result_img5"></div>
+  						</a>
+  						<a href="#" class="search-result_stat">All users (1,530)</a>
+
+    					<div class="division-line"></div>
+
+    					<!-- Articles Section-->
+    					<div class="section-name">Articles</div>
+    					<a href="#" class="search-result_article d-flex align-items-center">
+    						<div class="search-result_article_image"></div>
+    						<div class="article_text-field d-flex flex-column">
+    							<div class="article_text-field_header">A little about usability testing</div>
+    							<div class="article_text-field_description">3,912 viewers</div>
+    						</div>
+    						<div class="search-result_img search-result_img5"></div>
+    					</a>
+    					<a href="#" class="search-result_stat">All articles (30)</a>
+    					<div class="division-line"></div>
+    					<!-- All Results Button -->
+    					<button class="result_button">All results (2,000+)</button>
+    				</div>
+     
+    </div>
+  </div>
+
+			<!-- User Stats -->
+			<div class="nb_userStat d-flex">
+				<div class="nb_userStat_image"></div>
+				<div class="nb_userStat_field d-flex flex-wrap align-content-between">
+					<div class="nb_userStat_field_user-name">D. Kargaev</div>
+					<div class="nb_userStat_field_user-you">You</div>
+					<div class="nb_userStat_field_userViews-stat">367 views today</div>
+					<div class="nb_userStat_field_views-counter">+32</div>
+					<div class="nb_userStat_field_counter-img"></div>
+				</div>
+			</div>
+
+			<!-- Other -->
+			<div class="nb_other">
+
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    			<label class="menu-button d-flex flex-column align-items-center" for="hmt">
+  
+
+    			</label>
+    			<ul class="hidden-menu">
+      			<li><a href="">Link 1</a></li>  
+      			<li><a href="">Link 2</a></li>
+      			<li><a href="">Link 3</a></li>  
+    			</ul>
+			</div>
+
+	</header>
+
+	<main class="content d-flex">
+			<!-- Main Box For User Profile -->
+	<div class="main-box d-flex flex-column">
+								
+								<!-- Avatar Box -->
+
+		<div class="avatar-box avatar-box_style d-flex flex-column">
+			<!-- Splash Screen -->
+			<div class="splash-screen d-flex">
+				<!-- Upload Button -->
+				<a href="#" class="download-button download-button_style d-flex justify-content-center align-items-center">
+					<div class="download-button_image"></div></a>
+				<!-- Edit Profile Button -->
+				<a href="#" class="edit-profile edit-profile_style d-flex">
+					<div class="edit-profile_image edit-profile_image_style"></div>
+					<div class="edit-profile_text">Edit profile </div></a>	
+				<!-- Option Button -->
+				<a href="#" class="option-button option-button_style d-flex justify-content-center align-items-center">
+					<div class="option-button_image"></div></a>	
+			</div>
+			<!-- User Avatar -->
+			<div class="avatar avatar_style"></div>
+			<!-- User Info Field-->
+			<div class="user-info d-flex flex-column">
+				<div class="data-box d-flex">
+					<div class="user-name user-name_style">Dmitry Kargaev</div>
+					<div class="logo-yellow logo-yellow_style"></div>
+					<div class="geo-image geo-image_style"></div>
+					<div class="user-location user-location_style">Saint Petersburg, Russian Federation</div>
+
+				</div>
+				<div class="data-box d-flex">
+					<div class="user-about user-about_style">
+						Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.
+					</div>
+				</div>
+				<div class="data-box d-flex">
+					<button class="button button_style text-center">Contact info</button>
+					<button class="button-inv button-inv_style text-center">1,043 connections</button>
+				</div>
+			</div>	
+		</div>
+
+		<!-- Bookmark Box -->
+		<div class="bookmark-box bookmark-box_style d-flex flex-column justify-content-between">
+			<!-- Bookmark Field -->
+			<div class="bookmark-field bookmark-field_style d-flex align-items-end">
+				<!-- Bookmark 1 -->
+				<button class="bookmark bookmark_style d-flex justify-content-center align-items-center" autofocus data-toggle="collapse" href="#slide1" role="button" aria-expanded="false" aria-controls="slide1">Profile</button>
+				<!-- Bookmark 2 -->
+				<button class="bookmark bookmark_style d-flex justify-content-center align-items-center" data-toggle="collapse" href="#slide2" role="button" aria-expanded="false" aria-controls="slide2">Activity & interests</button>
+				<!-- Bookmark 3 -->
+				<button class="bookmark bookmark_style d-flex justify-content-center align-items-center" data-toggle="collapse" href="#slide3" role="button" aria-expanded="false" aria-controls="slide3">Articles (3)</button>
+			</div>
+
+			<div id="accordion">
+				<!-- Slide 1 -->
+				<div id="slide1" class="collapse show"  data-parent="#accordion">
+					<div class="about-field about-field_style d-flex flex-column">
+						<!-- Header -->
+						<div class="about-field_header">About</div>
+						<!-- Text -->
+						<div class="about-field_text">I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites.</div>
+						<!-- Link -->
+						<a href="#" class="about-field_link">See more</a>
+					</div>
+				</div>
+				<!-- Slide 2 -->
+				<div id="slide2" class="collapse"  data-parent="#accordion">
+					<div class="about-field about-field_style d-flex flex-column">
+						<!-- Header -->
+						<div class="about-field_header">Activity & interests</div>
+						<!-- Text -->
+						<div class="about-field_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta explicabo officiis necessitatibus accusamus est quod laborum velit ipsa. </div>
+						<!-- Link -->
+						<a href="#" class="about-field_link">See more</a>
+					</div>
+				</div>
+				<!-- Slide 3 -->
+				<div id="slide3" class="collapse"  data-parent="#accordion">
+					<div class="about-field about-field_style d-flex flex-column">
+						<!-- Header -->
+						<div class="about-field_header">Articles</div>
+						<!-- Text -->
+						<div class="about-field_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta explicabo officiis necessitatibus accusamus est quod laborum velit ipsa. </div>
+						<!-- Link -->
+						<a href="#" class="about-field_link">See more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Projects Box -->
+		<div class="projects-box projects-box_style d-flex flex-column">
+			<!-- Header Field -->
+			<div class="projects-box_header-field d-flex">
+				<!-- Header -->
+				<div class="projects-box_header-field_header">Projects</div>
+				<!-- Counter -->
+				<div class="projects-box_header-field_counter">3 of 12</div>
+			</div>
+			<!-- Central Field -->
+			<div class="projects-box_center-field d-flex justify-content-between">
+				<!-- Project Card -->
+				<div class="project-card d-flex flex-column">
+					<!-- Project Card Image -->
+					<div class="project-card_image project-card_image-1"></div>
+					<!-- Project Header -->
+					<div class="project-card_header">Zara redesign concept</div>
+					<!-- Project Description -->
+					<div class="project-card_description">UX/UI design, 15.07.2019</div>
+				</div>
+				<div class="project-card d-flex flex-column">
+					<div class="project-card_image project-card_image-2"></div>
+					<div class="project-card_header">SCTHON event brand identity</div>
+					<div class="project-card_description">Graphic design, 03.31.2019</div>
+				</div>
+				<div class="project-card d-flex flex-column">
+					<div class="project-card_image project-card_image-3"></div>
+					<div class="project-card_header">Drozd. Brand identity. 2016</div>
+					<div class="project-card_description">Graphic design, 03.04.2016</div>
+				</div>
+			</div>
+			<!-- Link -->
+			<a href="#" class="projects-box_link">Show all (12)</a>
+		</div>
+
+		<!-- Skills Box -->
+		<div class="skills-box skills-box_style d-flex flex-column">
+			<!-- Header -->
+			<div class="skills-box_header">Skills & Endoresments</div>
+			<!-- Center Field -->
+			<div class="skills-box_center-field d-flex justify-content-between">
+				<!-- Card 1-->
+				<div class="skills-box_center-field_card d-flex flex-column">
+					<!-- Header Field -->
+					<div class="skills-box_center-field_card_header-field d-flex justify-content-between">
+						<!-- Header -->
+						<div class="skills-box_center-field_card_header-field_header">
+							User experience (UX)</div>
+							<!-- Counter-->
+						<div class="skills-box_center-field_card_header-field_counter">
+						6</div>
+					</div>
+					<!-- Image Stack-->
+					<div class="skills-box_center-field_card_graphic-field d-flex">
+						<div class="skills-box_image skills-box_image-1"></div>
+						<div class="skills-box_image skills-box_image-2"></div>
+						<div class="skills-box_image skills-box_image-3"></div>
+						<div class="skills-box_image skills-box_image-4"></div>
+						<div class="skills-box_image skills-box_image-5"></div>
+						<div class="skills-box_image skills-box_image_counter d-flex align-items-center justify-content-center">+1</div>
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="skills-box_center-field_card d-flex flex-column">
+					<!-- Header Field -->
+					<div class="skills-box_center-field_card_header-field d-flex justify-content-between">
+						<!-- Header -->
+						<div class="skills-box_center-field_card_header-field_header">
+							User interface (UI)</div>
+							<!-- Counter-->
+						<div class="skills-box_center-field_card_header-field_counter">
+						7</div>
+					</div>
+					<!-- Image Stack-->
+					<div class="skills-box_center-field_card_graphic-field d-flex">
+						<div class="skills-box_image skills-box_image-6"></div>
+						<div class="skills-box_image skills-box_image-2"></div>
+						<div class="skills-box_image skills-box_image-7"></div>
+						<div class="skills-box_image skills-box_image-8"></div>
+						<div class="skills-box_image skills-box_image-5"></div>
+						<div class="skills-box_image skills-box_image_counter d-flex align-items-center justify-content-center">+1</div>
+					
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="skills-box_center-field_card d-flex flex-column">
+					<!-- Header Field -->
+					<div class="skills-box_center-field_card_header-field d-flex justify-content-between">
+						<!-- Header -->
+						<div class="skills-box_center-field_card_header-field_header">
+							Brand identity</div>
+							<!-- Counter-->
+						<div class="skills-box_center-field_card_header-field_counter">
+						5</div>
+					</div>
+					<!-- Image Stack-->
+					<div class="skills-box_center-field_card_graphic-field d-flex">
+						<div class="skills-box_image skills-box_image-9"></div>
+						<div class="skills-box_image skills-box_image-7"></div>
+						<div class="skills-box_image skills-box_image-4"></div>
+						<div class="skills-box_image skills-box_image-3"></div>
+						<div class="skills-box_image skills-box_image-10"></div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="skills-box_link">Show ALL (17)</a>
+		</div>
+
+		<!-- Experience Box -->
+		<div class="experience-box experience-box_style d-flex flex-column">
+			<!-- Header -->
+			<div class="experience-box_header">Experience</div>
+			<!-- Data Field 1 -->
+			<div class="experience-box_dataField d-flex">
+				<!-- Logo Image  -->
+				<div class="experience-box_dataField_image experience-box_dataField_image-1"></div>
+				<!-- Data Box -->
+				<div class="experience-box_dataField_dataBox d-flex flex-column">
+					<!-- Data Box Header -->
+					<div class="experience-box_dataField_dataBox_header">Freelance UX/UI designer</div>
+					<!-- Employer Field -->
+					<div class="experience-box_dataField_dataBox_employerField d-flex">
+						<!-- Employer Name -->
+						<div class="experience-box_dataField_dataBox_employerField_employerName">Self Employed</div>
+						<!-- Employer Location -->
+						<div class="experience-box_dataField_dataBox_employerField_employerLocation">Around the world</div>
+					</div>
+					<!-- Period of Work -->
+					<div class="experience-box_dataField_dataBox_periodField d-flex justify-content-between">
+						<!-- From Till Work -->
+						<div class="experience-box_dataField_dataBox_periodField_period">Jun 2016 — Present</div>
+						<!-- Duration Counter -->
+						<div class="experience-box_dataField_dataBox_periodField_periodCounter">3 yrs 3 mos</div>
+					</div>
+					<!-- Exp Description -->
+					<div class="experience-box_dataField_dataBox_description">Work with clients and web studios as freelancer. Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</div>
+				</div>
+			</div>
+			<!-- Division Line -->
+			<div class="experience-box_divisionLine"></div>
+
+			<!-- Data Field 2 -->
+			<div class="experience-box_dataField d-flex">
+				<!-- Logo Image  -->
+				<div class="experience-box_dataField_image experience-box_dataField_image-2"></div>
+				<!-- Data Box -->
+				<div class="experience-box_dataField_dataBox d-flex flex-column">
+					<!-- Data Box Header -->
+					<div class="experience-box_dataField_dataBox_header">UX/UI designer</div>
+					<!-- Employer Field -->
+					<div class="experience-box_dataField_dataBox_employerField d-flex">
+						<!-- Employer Name -->
+						<div class="experience-box_dataField_dataBox_employerField_employerName">Upwork</div>
+						<!-- Employer Location -->
+						<div class="experience-box_dataField_dataBox_employerField_employerLocation">International</div>
+					</div>
+					<!-- Period of Work -->
+					<div class="experience-box_dataField_dataBox_periodField d-flex">
+						<!-- From Till Work -->
+						<div class="experience-box_dataField_dataBox_periodField_period">Jun 2019 — Present</div>
+						<!-- Duration Counter -->
+						<div class="experience-box_dataField_dataBox_periodField_periodCounter">3 mos</div>
+					</div>
+					<!-- Exp Description -->
+					<div class="experience-box_dataField_dataBox_description">New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Education -->
+		<div class="education-box education-box_style">
+			<div class="education-box_header">Education</div>
+			<div class="education-box_dataField d-flex">
+				<div class="education-box_dataField_image"></div>
+				<div class="education-box_dataField_dataBox d-flex flex-column">
+					<div class="education-box_dataField_dataBox_header">Moscow State Linguistic University</div>
+					<div class="education-box_dataField_dataBox_degree">Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</div>
+					<div class="education-box_dataField_dataBox_period">2013 — 2017</div>
+					<div class="education-box_dataField_dataBox_description">Additional English classes and UX profile courses.</div>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+
+
+	<!-- Side Box For Statistic Information -->
+	<div class="side-box d-flex flex-column">
+
+		<!-- Dashboard -->
+		<div class="dashboard dashboard_style d-flex flex-column">
+			<!-- Header Field -->
+			<div class="dashboard_headerField d-flex justify-content-between">
+				<!-- Header -->
+				<div class="dashboard_headerField_header">your dashboard</div>
+				<!-- Link -->
+				<a href="#" class="dashboard_headerField_link">go to stats</a>
+			</div>
+			<!-- Division Line -->
+			<div class="dashboard_divisionLine"></div>
+			<!-- Views -->
+			<div class="dashboard_views">367</div>
+			<div class="dashboard_text">views today</div>
+			<!-- Posts -->
+			<div class="dashboard_views">15</div>
+			<div class="dashboard_text">post views</div>
+			<!-- Search  -->
+			<div class="dashboard_views">9</div>
+			<div class="dashboard_text">search appereances</div>
+		</div>
+
+		<!-- Visitors -->
+		<div class="visitors visitors_style d-flex flex-column">
+			<div class="visitors_headerField d-flex justify-content-between">
+				<div class="visitors_headerField_header">visitors</div>
+				<a href="#" class="visitors_headerField_link">view all</a>
+			</div>
+			<!-- Division Line -->
+			<div class="visitors_divisionLine"></div>
+			<!-- Visitor Card 1-->
+			<a href="#" class="visitors_card d-flex align-items-center">
+				<!-- Avatar -->
+				<div class="visitors_card_image visitors_card_image-1"></div>
+				<!-- Text Field -->
+				<div class="visitors_card_textField d-flex flex-column justify-content-between">
+					<div class="visitors_card_textField_name">Darlene Black</div>
+					<div class="visitors_card_textField_position">HR-manager, 10 000 connec...</div>
+				</div>
+			</a>
+			<!-- Visitor Card 2-->
+			<a href="#" class="visitors_card d-flex align-items-center">
+				<!-- Avatar -->
+				<div class="visitors_card_image visitors_card_image-2"></div>
+				<!-- Text Field -->
+				<div class="visitors_card_textField d-flex flex-column justify-content-between">
+					<div class="visitors_card_textField_name">Theresa Steward</div>
+					<div class="visitors_card_textField_position">iOS developer</div>
+				</div>
+			</a>
+			<!-- Visitor Card 3 -->
+			<a href="#" class="visitors_card d-flex align-items-center">
+				<!-- Avatar -->
+				<div class="visitors_card_image visitors_card_image-3"></div>
+				<!-- Text Field -->
+				<div class="visitors_card_textField d-flex flex-column justify-content-between">
+					<div class="visitors_card_textField_name">Brandon Wilson</div>
+					<div class="visitors_card_textField_position">Senior UX designer</div>
+				</div>
+			</a>
+			<!-- Visitor Card 4-->
+			<a href="#" class="visitors_card d-flex align-items-center">
+				<!-- Avatar -->
+				<div class="visitors_card_image visitors_card_image-4"></div>
+				<!-- Text Field -->
+				<div class="visitors_card_textField d-flex flex-column justify-content-between">
+					<div class="visitors_card_textField_name">Kyle Fisher</div>
+					<div class="visitors_card_textField_position">Product designer at Com...</div>
+				</div>
+			</a>
+			<!-- Visitor Card 5 -->
+			<a href="#" class="visitors_card d-flex align-items-center">
+				<!-- Avatar -->
+				<div class="visitors_card_image visitors_card_image-5"></div>
+				<!-- Text Field -->
+				<div class="visitors_card_textField d-flex flex-column justify-content-between">
+					<div class="visitors_card_textField_name">Audrey Alexander</div>
+					<div class="visitors_card_textField_position">Team lead at Google</div>
+				</div>
+			</a>
+
+		</div>
+
+		<!-- Courses -->
+		<div class="courses courses_style d-flex flex-column">
+			<!-- Header -->
+			<div class="courses_header">You may like these courses</div>
+			<!-- Division Line -->
+			<div class="courses_divisionLine"></div>
+
+			<!-- Video Card 1-->
+			<div class="courses_videoCard d-flex">
+				<div class="courses_videoCard_image courses_videoCard_image-1 d-flex justify-content-center align-items-center">
+					<button class="courses_videoCard_button d-flex">
+						<div class="courses_videoCard_button_play"></div>
+					</button>
+				</div>
+				<!-- Video Card Text-->
+				<a href="#" class="courses_videoCard_textField d-flex flex-column justify-content-between">
+					<!-- Video Card Header-->
+					<div class="courses_videoCard_textField_name d-flex flex-wrap">UX Foundations: Prototyping</div>
+					<!-- Video Card Viewers Counter-->
+					<div class="courses_videoCard_textField_viewers">27,959 viewers</div>
+				</a>
+			</div>
+
+			<!-- Video Card 2-->
+			<div class="courses_videoCard d-flex">
+				<div class="courses_videoCard_image courses_videoCard_image-2 d-flex justify-content-center align-items-center">
+					<button class="courses_videoCard_button d-flex">
+						<div class="courses_videoCard_button_play"></div>
+					</button>
+				</div>
+				<!-- Video Card Text-->
+				<a href="#" class="courses_videoCard_textField d-flex flex-column justify-content-between">
+					<!-- Video Card Header-->
+					<div class="courses_videoCard_textField_name d-flex flex-wrap">Designing with Adobe XD and pro</div>
+					<!-- Video Card Viewers Counter-->
+					<div class="courses_videoCard_textField_viewers">9,122 viewers</div>
+				</a>
+			</div>
+
+			<!-- Video Card 3-->
+			<div class="courses_videoCard d-flex">
+				<div class="courses_videoCard_image courses_videoCard_image-3 d-flex justify-content-center align-items-center">
+					<button class="courses_videoCard_button d-flex">
+						<div class="courses_videoCard_button_play"></div>
+					</button>
+				</div>
+				<!-- Video Card Text-->
+				<a href="#" class="courses_videoCard_textField d-flex flex-column justify-content-between">
+					<!-- Video Card Header-->
+					<div class="courses_videoCard_textField_name d-flex flex-wrap">UX Foundations: Styles and GUIs</div>
+					<!-- Video Card Viewers Counter-->
+					<div class="courses_videoCard_textField_viewers">13,858 viewers</div>
+				</a>
+			</div>
+
+			<!-- Link -->
+			<a href="#" class="courses_link">See all recomendations</a>
+		</div>
+	</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer footer_style d-flex">
+		<!-- Footer Logo -->
+		<div class="footer_logoBox d-flex flex-column justify-content-between">
+			<div class="footer_logoBox_logo"></div>
+			<div class="footer_logoBox_companyName"></div>
+		</div>
+		<!-- Footer Navigation -->
+		<div class="footer_navigation d-flex flex-column">
+			<div class="footer_navigation_header">Navigation</div>
+				<div class="footer_navigation_linkRow d-flex">
+					<div class="footer_navigation_linkRow_linkBox d-flex flex-column justify-content-between">
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">About</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Careers</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Advertising</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Small Business</a>
+					</div>
+
+					<div class="footer_navigation_linkRow_linkBox d-flex flex-column justify-content-between">
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Talent Solutions</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Marketing Solutions</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Sales Solutions</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Safety Center</a>
+					</div>
+
+					<div class="footer_navigation_linkRow_linkBox d-flex flex-column justify-content-between">
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Community Guidelines</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Privacy & Terms</a>
+						<a  href="#" class="footer_navigation_linkRow_linkBox_link">Mobile App</a>
+					</div>
+				</div>
+		</div>
+		<!-- Footer Fast Access -->
+		<div class="footer_fastAccess d-flex flex-column">
+			<div class="footer_fastAccess_header">Fast Access</div>
+			<button class="footer_fastAccess_questionsButton d-flex align-items-center justify-content-between">
+				Questions?<div class="footer_fastAccess_questionsButton_image"></div>
+			</button>
+			<button class="footer_fastAccess_settingsButton d-flex align-items-center justify-content-between">
+				Settings?<div class="footer_fastAccess_settingsButton_image"></div>
+			</button>
+		</div>
+		<!-- Footer Language Choise -->
+		<div class="footer_language d-flex flex-column">
+			<div class="footer_language_header">Language</div>
+			<div class="dropdown">
+    		<button type="button" class="footer_language_button d-flex align-items-center justify-content-between" data-toggle="dropdown">English
+    			<span class="footer_language_button_image"></span>
+    		</button>
+    		<div class="dropdown-menu">
+      		<a class="dropdown-item" href="#">Ukrainian</a>
+      		<a class="dropdown-item" href="#">French</a>
+      		<a class="dropdown-item" href="#">Spanish</a>
+    		</div>
+  		</div>
+		</div>
+	</footer>
+
+	</div>
+
+
+
+</body>
+</html>

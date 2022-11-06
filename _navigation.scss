@@ -1,0 +1,357 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+
+/* Navigation Bar */
+.navigationBar{
+	@include blockSize (inherit, 80px);
+	
+	&_style{
+		background: $bgColor;
+}}
+
+/*Logo Block*/
+.nb_logoBlock{
+	/* Navigation Bar Logo Block */
+	@include blockSize (130px, inherit);
+	@include navBar_border-right;
+	margin-right: 14px;
+
+	&_image{
+		/* Navigation Bar Logo Image */
+		@include image (46px, 46px);
+		@include imgStyle;
+		background-image: url(images/header-img/Logo.png);
+}}
+
+/*Menu Block*/
+.nb_menuField{
+	/* Navigation Bar Menu Field */
+	@include blockSize (484px, inherit);
+	@include navBar_border-right;
+
+	&_image{
+		/* Menu Links Image */
+		@include image (24px, 24px);
+		@include imgStyle;
+		margin-top: 18px;
+		margin-bottom: 10px;
+}}
+.nav-link{
+	/* Nav Link Style */
+	padding: 0;
+	margin: 0;
+	@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+
+	&:hover{
+		@include link-reset(#181818);
+}}
+li{
+	@include blockSize (90px, 80px);
+}
+ul li:nth-child(1) .nb_menuField_image{
+	background-image: url(images/header-img/rss.png);
+}
+ul li:nth-child(2) .nb_menuField_image{
+	background-image: url(images/header-img/users.png);
+}
+ul li:nth-child(3) .nb_menuField_image{
+	background-image: url(images/header-img/briefcase.png);
+}
+ul li:nth-child(4) .nb_menuField_image{
+	background-image: url(images/header-img/message-square.jpeg);
+}
+ul li:nth-child(5) .nb_menuField_image{
+	background-image: url(images/header-img/bell.jpeg);
+}
+
+/* Search Block */
+.search-btn{
+	/* Search Button */
+	@include blockSize (368px, 80px);
+	@include menuFont($fontFamily, 16px, 15px, none, #CECECE);
+    background-color: $bgColor;
+    border: none;
+    cursor: pointer;
+
+    &_image{
+    	/* Search Button Image */
+		@include image (24px, 24px);
+		@include imgStyle;
+		background-image: url(images/header-img/search.png);
+		margin-left: 30px;
+		margin-right: 20px;
+    }
+
+	&:hover, &:focus{
+    	background-color: $bgColor;
+    	outline: none;
+}}
+
+.dropdown {
+	/* Dropdowm */
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+	padding: 0;
+	/* Dropdowm content */
+	@include blockSize (368px, 800px);
+	margin-top: -80px;
+    display: none;
+    position: absolute;
+    background-color: $bgColor;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-field{
+	/* Dropdowm field */
+	@include blockSize (368px, 800px);
+}
+.search-field{
+	/* Search field */
+	@include blockSize (366px, 80px);
+	border-bottom: 1px solid #F4F4F4;
+	margin-bottom: 5px;
+
+	&_button{
+		/* Search Field Button */
+		@include blockSize (32px, 32px);
+		border-radius: $radius;
+		background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+		margin-left: 15px;
+
+		&_image{
+			/* Search Field Button Image*/
+			@include image (24px, 24px);
+			@include imgStyle;
+			background-image: url(images/header-img/search-white.png);
+}}}
+
+input[type=text]{
+	/* Input box styles */
+ 	@include blockSize (260px, 40px);
+  	@include menuFont($fontFamily, 16px, 15px, none, #181818);
+  	outline: none;
+  	border: none;
+  	margin-left: 31px;	
+
+  		&::placeholder{
+		/* Placeholders styles */
+		@include menuFont($fontFamily, 16px, 15px, none, #181818);
+}}
+
+.show {display: block;}
+
+.section-name{
+	@include menuFont($fontFamily, 12px, 11px, uppercase, rgba(24, 24, 24, 0.2));
+	margin: 20px 0px 15px 30px;
+}
+.search-result{
+	@include blockSize (306px, 65px);
+	margin: 0px 0px 10px 30px;
+	border: 1px solid #F4F4F4;
+	border-radius: 6px;
+
+	&:hover{
+		@include link-reset(#181818);
+	}
+
+	&_img{
+		@include image (32px, 32px);
+		@include imgStyle;
+		margin-left: 15px;
+	}
+	&_stat{
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+		margin: 5px 0px 20px 30px;
+
+		&:hover{
+		@include link-reset(#0275B1);
+}
+}}
+
+.search-result_img1{
+	background-image: url(images/header-img/upwork.png);
+} 
+.search-result_img2{
+	background-image: url(images/header-img/google.png);
+} 
+.search-result_img3{
+	background-image: url(images/header-img/Brandon.png);
+} 
+.search-result_img4{
+	background-image: url(images/header-img/Kyle.png);
+} 
+.search-result_img5{
+	background-image: url(images/header-img/vector-left.png);
+} 
+
+.text-field{
+	@include blockSize (200px, 35px);
+	margin-left: 10px;
+
+	&_header{
+		@include menuFont($fontFamily, 12px, 150%, none, #181818);
+	}
+	&_description{
+		@include menuFont($fontFamily, 10px, 150%, none, #181818);
+}}
+
+.division-line{
+	@include blockSize (306px, 1px);
+	background-color: #F4F4F4;
+	margin-left: 30px;
+}
+.search-result_article{
+	@include blockSize (306px, 86px);
+	margin: 0px 0px 10px 30px;
+	border: 1px solid #F4F4F4;
+	border-radius: 6px;
+
+	&:hover{
+		@include link-reset(#181818);
+	}
+	&_image{
+		@include image (80px, 52px);
+		@include imgStyle;
+		background-image: url(images/header-img/photo.png);
+		margin-left: 15px;
+	}}
+
+.article_text-field{
+	@include blockSize (150px, 56px);
+	margin-left: 15px;
+
+	&_header{
+		@include menuFont($fontFamily, 14px, 125%, none, #181818);
+	}
+	&_description{
+		@include menuFont($fontFamily, 10px, 150%, none, #181818);
+		margin-top: 7px;
+	}
+}
+
+.result_button{
+	@include blockSize (306px, 32px);
+	@include menuFont($fontFamily, 12px, 11px, uppercase, #FFFFFF);
+	margin: 20px 0px 0px 30px;
+	background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+	border-radius: 4px;
+}
+/*User Stat Block*/
+
+.nb_userStat{
+	@include blockSize (330px, inherit);
+	@include navBar_border-right;
+	@include navBar_border-left;
+
+	&_image{
+		@include image (42px, 42px);
+		@include imgStyle;
+		background-image: url(images/header-img/Rectangle.png);
+		margin: 18px 15px 0px 30px;
+	}
+	&_field{
+		@include blockSize (139px, 34px);
+		margin-top: 24px;	
+
+		&_user-name{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		}
+		&_user-you{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, rgba(24, 24, 24, 0.2));
+			margin-left: 10px;
+			
+		}
+		&_userViews-stat{
+			@include menuFont($fontFamily, 12px, 11px, none, #747474);
+		}
+		&_views-counter{
+			@include menuFont($fontFamily, 12px, 11px, none, #02B033);
+			margin-left: 4px;
+		}
+		&_counter-img{
+			@include image (12px, 12px);
+			@include imgStyle;
+			background-image: url(images/header-img/arrow-up-right.png);
+			margin-left: 2px;
+}}}
+
+/* Other Block */
+.nb_other{
+	@include blockSize (90px, inherit);
+	@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+	@include navBar_border-right;
+}
+
+.menu-button{
+		@include blockSize (inherit, inherit);
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		background: $bgColor;
+		position: fixed;
+		cursor: pointer;
+  	transition: left .23s;
+  	z-index: 3;
+  	-webkit-transform: translateZ(0);
+  	-webkit-backface-visibility: hidden;
+  	border: 1px solid #F4F4F4;;
+}
+.menu-button > span{
+		@include image (24px, 24px);
+			@include imgStyle;
+			background-image: url(images/header-img/more-horizontal.png);
+			margin-top: 18px;
+			margin-bottom: 10px;
+}
+.menu-button > span::after{
+		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		margin-top: 10px;
+		content: 'Other';
+}
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 370px;
+  background-color: $bgColor;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  transition: right .23s;
+  z-index: 2;
+  box-shadow: 0px 10px 40px rgba(89, 120, 150, 0.06);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.hidden-menu-ticker:checked ~ .menu-button{
+  right: 370px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .menu-button_image.first {
+  -webkit-transform: rotate(45deg);
+}
+.hidden-menu-ticker:checked ~ .menu-button_image.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .menu-button_image.third {
+  background-image: url(images/header-img/x.png);
+}
+
+
+
+
+
+
+
+
+

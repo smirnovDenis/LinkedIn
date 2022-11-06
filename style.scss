@@ -1,0 +1,23 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'navigation.scss';
+@import 'profile.scss';
+@import 'mixin.scss';
+@import 'footer.scss';
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #E5E5E5;
+  	height: 100%;
+
+
+}
+button{
+	/* Search field button style*/
+	@include button-reset;
+}
