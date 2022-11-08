@@ -30,6 +30,7 @@
 
 		&_header{
 			@include menuFont($fontFamily, 12px, 11px, none, #181818);
+			@include mediumFont;
 		}
 		&_linkRow{
 
@@ -39,6 +40,7 @@
 
 			&_link{
 				@include menuFont($fontFamily, 12px, 11px, none, #181818);
+				@include regularFont;
 
 
 				&:hover{
@@ -51,12 +53,14 @@
 
 			&_header{
 					@include menuFont($fontFamily, 12px, 11px, none, #181818);
+					@include mediumFont;
 					margin-bottom: 13px;
 			}
 			&_questionsButton{
 				@include blockSize (inherit, 32px);
 				@include buttonStyle;
 				@include menuFont($fontFamily, 12px, 11px, uppercase, #FFFFFF);
+				@include mediumFont;
 				padding: 0 8px 0 15px;
 				margin-top: 10px;
 
@@ -69,6 +73,7 @@
 				@include blockSize (inherit, 32px);
 				@include buttonStyleInv;
 				@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+				@include mediumFont;
 				padding: 0 8px 0 15px;
 				margin-top: 10px;
 
@@ -83,12 +88,14 @@
 
 			&_header{
 					@include menuFont($fontFamily, 12px, 11px, none, #181818);
+					@include mediumFont;
 			}
 			&_button{
 				@include blockSize (270px, 32px);
 				@include buttonStyleInv;
 				border: 1px solid #F0F0F0;
 				@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+				@include mediumFont;
 				margin-top: 23px;
 				padding: 0 9px 0 15px;
 
@@ -102,8 +109,14 @@
 	margin-left: 10px;
 	margin-right: 0;
 }
+.dropdown-menu_footer{
+	@include blockSize (270px, 75px);
+	margin-top: 2px;
+	padding-top: 10px;
+}
 .dropdown-item{
 	@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+	@include mediumFont;
 }
 
 

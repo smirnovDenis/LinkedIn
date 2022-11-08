@@ -42,6 +42,7 @@
 	padding: 0;
 	margin: 0;
 	@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+	@include mediumFont;
 
 	&:hover{
 		@include link-reset(#181818);
@@ -70,6 +71,7 @@ ul li:nth-child(5) .nb_menuField_image{
 	/* Search Button */
 	@include blockSize (368px, 80px);
 	@include menuFont($fontFamily, 16px, 15px, none, #CECECE);
+	@include lightFont;
     background-color: $bgColor;
     border: none;
     cursor: pointer;
@@ -93,7 +95,7 @@ ul li:nth-child(5) .nb_menuField_image{
     position: relative;
     display: inline-block;
 }
-.dropdown-menu {
+.dropdown-menu_header {
 	padding: 0;
 	/* Dropdowm content */
 	@include blockSize (368px, 800px);
@@ -140,12 +142,14 @@ input[type=text]{
   		&::placeholder{
 		/* Placeholders styles */
 		@include menuFont($fontFamily, 16px, 15px, none, #181818);
+		@include lightFont;
 }}
 
 .show {display: block;}
 
 .section-name{
 	@include menuFont($fontFamily, 12px, 11px, uppercase, rgba(24, 24, 24, 0.2));
+	@include regularFont;
 	margin: 20px 0px 15px 30px;
 }
 .search-result{
@@ -165,6 +169,7 @@ input[type=text]{
 	}
 	&_stat{
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+		@include mediumFont;
 		margin: 5px 0px 20px 30px;
 
 		&:hover{
@@ -194,9 +199,11 @@ input[type=text]{
 
 	&_header{
 		@include menuFont($fontFamily, 12px, 150%, none, #181818);
+		@include regularFont;
 	}
 	&_description{
 		@include menuFont($fontFamily, 10px, 150%, none, #181818);
+		@include lightFont;
 }}
 
 .division-line{
@@ -226,9 +233,11 @@ input[type=text]{
 
 	&_header{
 		@include menuFont($fontFamily, 14px, 125%, none, #181818);
+		@include boldFont;
 	}
 	&_description{
 		@include menuFont($fontFamily, 10px, 150%, none, #181818);
+		@include regularFont;
 		margin-top: 7px;
 	}
 }
@@ -236,6 +245,7 @@ input[type=text]{
 .result_button{
 	@include blockSize (306px, 32px);
 	@include menuFont($fontFamily, 12px, 11px, uppercase, #FFFFFF);
+	@include mediumFont;
 	margin: 20px 0px 0px 30px;
 	background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
 	border-radius: 4px;
@@ -259,17 +269,21 @@ input[type=text]{
 
 		&_user-name{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+			@include mediumFont;
 		}
 		&_user-you{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, rgba(24, 24, 24, 0.2));
+			@include regularFont;
 			margin-left: 10px;
 			
 		}
 		&_userViews-stat{
 			@include menuFont($fontFamily, 12px, 11px, none, #747474);
+			@include regularFont;
 		}
 		&_views-counter{
 			@include menuFont($fontFamily, 12px, 11px, none, #02B033);
+			@include mediumFont;
 			margin-left: 4px;
 		}
 		&_counter-img{
@@ -282,7 +296,6 @@ input[type=text]{
 /* Other Block */
 .nb_other{
 	@include blockSize (90px, inherit);
-	@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
 	@include navBar_border-right;
 }
 
@@ -290,62 +303,197 @@ input[type=text]{
 		@include blockSize (inherit, inherit);
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
 		background: $bgColor;
+		@include navBar_border-right;
 		position: fixed;
 		cursor: pointer;
   	transition: left .23s;
   	z-index: 3;
   	-webkit-transform: translateZ(0);
   	-webkit-backface-visibility: hidden;
-  	border: 1px solid #F4F4F4;;
-}
-.menu-button > span{
-		@include image (24px, 24px);
+  
+
+  	&_image{
+  		@include image (24px, 24px);
 			@include imgStyle;
 			background-image: url(images/header-img/more-horizontal.png);
 			margin-top: 18px;
 			margin-bottom: 10px;
-}
-.menu-button > span::after{
-		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
-		margin-top: 10px;
-		content: 'Other';
-}
+		}
+		&_text{
+			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+				@include mediumFont;
+}}
 .hidden-menu {
   display: block;
   position: fixed;
   list-style:none;
-  padding: 10px;
-  margin: 0;
   box-sizing: border-box;
   width: 370px;
   background-color: $bgColor;
   height: 100%;
-  top: 0;
   right: -100%;
   transition: right .23s;
   z-index: 2;
   box-shadow: 0px 10px 40px rgba(89, 120, 150, 0.06);
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+
+  &_header{
+  	@include blockSize (inherit, 81px);
+  	@include menuFont($fontFamily, 14px, 21px, none, #181818);
+  	@include mediumFont;
+  	border-bottom: 1px solid #F4F4F4;
+  	padding-left: 20px;
+
+  	&_helpBtn{
+  		@include blockSize (90px, 80px);
+
+  		&_image{
+  			@include image (24px, 24px);
+				@include imgStyle;
+				background-image: url(images/header-img/help-circle.png);
+				margin-top: 20px;
+  		}
+  		&_text{
+  			@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+  			@include regularFont;
+  			margin-top: 12px;
+  }}}
+  &_learningBtn{
+  	@include blockSize (310px, 54px);
+  	@include buttonStyle;
+  	margin: 20px 0 0 30px;
+
+  	&_image{
+  		@include image (24px, 24px);
+			@include imgStyle;
+			background-image: url(images/header-img/book-open.png);
+			margin-left: 20px;
+  	}
+  	&_textBox{
+  		height: 35px;
+  		margin-left: 22px;
+
+  		&_header{
+  		@include menuFont($fontFamily, 12px, 11px, none, #FFFFFF);	
+  		@include mediumFont;
+  	}
+  		&_text{
+  		@include menuFont($fontFamily, 10px, 15px, none, #FFFFFF);
+  		@include lightFont;
+  		margin-top: 2px;
+  	}}}
+  	&_buttonBox{
+  		@include blockSize (inherit, 180px);
+  		border-bottom: 1px solid #F4F4F4;
+  		padding: 20px 30px;
+
+  		&_item{
+  			@include blockSize (150px, 40px);
+  			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+  			@include mediumFont;
+  			border: 1px solid #F4F4F4;
+				border-radius: 6px;
+
+				&_image1{
+					@include image (14px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/insights.png);
+					margin: 0 14px 0 15px;
+				}
+				&_image2{
+					@include image (16px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/advertise.png);
+					margin: 0 13px 0 14px;
+				}
+				&_image3{
+					@include image (14px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/groups.png);
+					margin: 0 14px 0 15px;
+				}
+				&_image4{
+					@include image (18px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/profinder.png);
+					margin: 0 12px 0 13px;
+				}
+				&_image5{
+					@include image (17px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/salary.png);
+					margin: 0 12px 0 14px;
+				}
+				&_image6{
+					@include image (20px, 16px);
+					@include imgStyle;
+					background-image: url(images/header-img/slideshare.png);
+					margin: 0 11px 0 13px;
+				}
+  		}
+  	}
+  	&_serviceBox{
+  		@include blockSize (inherit, 460px);
+  		border-bottom: 1px solid #F4F4F4;
+
+  		&_header{
+  			@include menuFont($fontFamily, 14px, 21px, none, #181818);
+  			@include mediumFont;
+  			margin: 20px 0 5px 32px;
+  		}
+  		&_item{
+  			@include blockSize (313px, 65px);
+  			border: 1px solid #F4F4F4;
+				border-radius: 6px;
+				margin: 10px 0 0 30px;
+				padding: 15px 0 0 20px;
+
+				&_header{
+					@include menuFont($fontFamily, 12px, 18px, none, #181818);
+					@include mediumFont;
+				}
+				&_text{
+					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+					@include lightFont;
+					margin-top: 2px;
+				}
+			}
+
+  	}
+  	&_premiumBtn{
+  		@include blockSize (313px, 65px);
+  		background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%);
+			border-radius: $radius;
+			margin: 20px 0 0 30px;
+			padding: 15px 0 0 20px;
+
+			&_header{
+					@include menuFont($fontFamily, 12px, 18px, none, #FFFFFF);
+					@include mediumFont;
+				}
+				&_text{
+					@include menuFont($fontFamily, 10px, 15px, none, #FFFFFF);
+					@include lightFont;
+					margin-top: 2px;
+				}
+  	}
 }
+
+
+
 .hidden-menu-ticker {
   display: none;
 }
 .hidden-menu-ticker:checked ~ .menu-button{
   right: 370px;
+  border: none;
+  @include navBar_border-left;
 }
 .hidden-menu-ticker:checked ~ .hidden-menu {
   right: 0;
 }
-.hidden-menu-ticker:checked ~ .menu-button_image.first {
-  -webkit-transform: rotate(45deg);
-}
-.hidden-menu-ticker:checked ~ .menu-button_image.second {
-  opacity: 0;
-}
-.hidden-menu-ticker:checked ~ .menu-button_image.third {
-  background-image: url(images/header-img/x.png);
-}
+
 
 
 

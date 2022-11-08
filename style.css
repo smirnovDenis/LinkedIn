@@ -117,7 +117,9 @@
   font-size: 12px;
   line-height: 11px;
   text-transform: uppercase;
-  color: #181818; }
+  color: #181818;
+  font-weight: 500;
+  font-style: normal; }
   .nav-link:hover {
     text-decoration: none;
     outline: none;
@@ -152,6 +154,8 @@ ul li:nth-child(5) .nb_menuField_image {
   line-height: 15px;
   text-transform: none;
   color: #CECECE;
+  font-weight: 100;
+  font-style: normal;
   background-color: #FFFFFF;
   border: none;
   cursor: pointer; }
@@ -174,7 +178,7 @@ ul li:nth-child(5) .nb_menuField_image {
   position: relative;
   display: inline-block; }
 
-.dropdown-menu {
+.dropdown-menu_header {
   padding: 0;
   /* Dropdowm content */
   width: 368px;
@@ -232,7 +236,9 @@ input[type=text] {
     font-size: 16px;
     line-height: 15px;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 100;
+    font-style: normal; }
 
 .show {
   display: block; }
@@ -243,6 +249,8 @@ input[type=text] {
   line-height: 11px;
   text-transform: uppercase;
   color: rgba(24, 24, 24, 0.2);
+  font-weight: 300;
+  font-style: normal;
   margin: 20px 0px 15px 30px; }
 
 .search-result {
@@ -268,6 +276,8 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #0275B1;
+    font-weight: 500;
+    font-style: normal;
     margin: 5px 0px 20px 30px; }
     .search-result_stat:hover {
       text-decoration: none;
@@ -298,13 +308,17 @@ input[type=text] {
     font-size: 12px;
     line-height: 150%;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 300;
+    font-style: normal; }
   .text-field_description {
     font-family: "Gotham Pro", sans-serif;
     font-size: 10px;
     line-height: 150%;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 100;
+    font-style: normal; }
 
 .division-line {
   width: 306px;
@@ -340,13 +354,17 @@ input[type=text] {
     font-size: 14px;
     line-height: 125%;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: bold;
+    font-style: normal; }
   .article_text-field_description {
     font-family: "Gotham Pro", sans-serif;
     font-size: 10px;
     line-height: 150%;
     text-transform: none;
     color: #181818;
+    font-weight: 300;
+    font-style: normal;
     margin-top: 7px; }
 
 .result_button {
@@ -357,6 +375,8 @@ input[type=text] {
   line-height: 11px;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-weight: 500;
+  font-style: normal;
   margin: 20px 0px 0px 30px;
   background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
   border-radius: 4px; }
@@ -384,26 +404,34 @@ input[type=text] {
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
-      color: #181818; }
+      color: #181818;
+      font-weight: 500;
+      font-style: normal; }
     .nb_userStat_field_user-you {
       font-family: "Gotham Pro", sans-serif;
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
       color: rgba(24, 24, 24, 0.2);
+      font-weight: 300;
+      font-style: normal;
       margin-left: 10px; }
     .nb_userStat_field_userViews-stat {
       font-family: "Gotham Pro", sans-serif;
       font-size: 12px;
       line-height: 11px;
       text-transform: none;
-      color: #747474; }
+      color: #747474;
+      font-weight: 300;
+      font-style: normal; }
     .nb_userStat_field_views-counter {
       font-family: "Gotham Pro", sans-serif;
       font-size: 12px;
       line-height: 11px;
       text-transform: none;
       color: #02B033;
+      font-weight: 500;
+      font-style: normal;
       margin-left: 4px; }
     .nb_userStat_field_counter-img {
       width: 12px;
@@ -418,11 +446,6 @@ input[type=text] {
 .nb_other {
   width: 90px;
   height: inherit;
-  font-family: "Gotham Pro", sans-serif;
-  font-size: 12px;
-  line-height: 11px;
-  text-transform: uppercase;
-  color: #181818;
   border-right: 1px solid #F4F4F4; }
 
 .menu-button {
@@ -434,68 +457,248 @@ input[type=text] {
   text-transform: uppercase;
   color: #181818;
   background: #FFFFFF;
+  border-right: 1px solid #F4F4F4;
   position: fixed;
   cursor: pointer;
   transition: left .23s;
   z-index: 3;
   -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  border: 1px solid #F4F4F4; }
-
-.menu-button > span {
-  width: 24px;
-  height: 24px;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(images/header-img/more-horizontal.png);
-  margin-top: 18px;
-  margin-bottom: 10px; }
-
-.menu-button > span::after {
-  font-family: "Gotham Pro", sans-serif;
-  font-size: 12px;
-  line-height: 11px;
-  text-transform: uppercase;
-  color: #181818;
-  margin-top: 10px;
-  content: 'Other'; }
+  -webkit-backface-visibility: hidden; }
+  .menu-button_image {
+    width: 24px;
+    height: 24px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/header-img/more-horizontal.png);
+    margin-top: 18px;
+    margin-bottom: 10px; }
+  .menu-button_text {
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #181818;
+    font-weight: 500;
+    font-style: normal; }
 
 .hidden-menu {
   display: block;
   position: fixed;
   list-style: none;
-  padding: 10px;
-  margin: 0;
   box-sizing: border-box;
   width: 370px;
   background-color: #FFFFFF;
   height: 100%;
-  top: 0;
   right: -100%;
   transition: right .23s;
   z-index: 2;
   box-shadow: 0px 10px 40px rgba(89, 120, 150, 0.06);
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden; }
+  .hidden-menu_header {
+    width: inherit;
+    height: 81px;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: none;
+    color: #181818;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 1px solid #F4F4F4;
+    padding-left: 20px; }
+    .hidden-menu_header_helpBtn {
+      width: 90px;
+      height: 80px; }
+      .hidden-menu_header_helpBtn_image {
+        width: 24px;
+        height: 24px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/help-circle.png);
+        margin-top: 20px; }
+      .hidden-menu_header_helpBtn_text {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 12px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #0275B1;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 12px; }
+  .hidden-menu_learningBtn {
+    width: 310px;
+    height: 54px;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    border-radius: 4px;
+    margin: 20px 0 0 30px; }
+    .hidden-menu_learningBtn_image {
+      width: 24px;
+      height: 24px;
+      background-size: inherit;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(images/header-img/book-open.png);
+      margin-left: 20px; }
+    .hidden-menu_learningBtn_textBox {
+      height: 35px;
+      margin-left: 22px; }
+      .hidden-menu_learningBtn_textBox_header {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 12px;
+        line-height: 11px;
+        text-transform: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-style: normal; }
+      .hidden-menu_learningBtn_textBox_text {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 10px;
+        line-height: 15px;
+        text-transform: none;
+        color: #FFFFFF;
+        font-weight: 100;
+        font-style: normal;
+        margin-top: 2px; }
+  .hidden-menu_buttonBox {
+    width: inherit;
+    height: 180px;
+    border-bottom: 1px solid #F4F4F4;
+    padding: 20px 30px; }
+    .hidden-menu_buttonBox_item {
+      width: 150px;
+      height: 40px;
+      font-family: "Gotham Pro", sans-serif;
+      font-size: 12px;
+      line-height: 11px;
+      text-transform: uppercase;
+      color: #181818;
+      font-weight: 500;
+      font-style: normal;
+      border: 1px solid #F4F4F4;
+      border-radius: 6px; }
+      .hidden-menu_buttonBox_item_image1 {
+        width: 14px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/insights.png);
+        margin: 0 14px 0 15px; }
+      .hidden-menu_buttonBox_item_image2 {
+        width: 16px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/advertise.png);
+        margin: 0 13px 0 14px; }
+      .hidden-menu_buttonBox_item_image3 {
+        width: 14px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/groups.png);
+        margin: 0 14px 0 15px; }
+      .hidden-menu_buttonBox_item_image4 {
+        width: 18px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/profinder.png);
+        margin: 0 12px 0 13px; }
+      .hidden-menu_buttonBox_item_image5 {
+        width: 17px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/salary.png);
+        margin: 0 12px 0 14px; }
+      .hidden-menu_buttonBox_item_image6 {
+        width: 20px;
+        height: 16px;
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(images/header-img/slideshare.png);
+        margin: 0 11px 0 13px; }
+  .hidden-menu_serviceBox {
+    width: inherit;
+    height: 460px;
+    border-bottom: 1px solid #F4F4F4; }
+    .hidden-menu_serviceBox_header {
+      font-family: "Gotham Pro", sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: none;
+      color: #181818;
+      font-weight: 500;
+      font-style: normal;
+      margin: 20px 0 5px 32px; }
+    .hidden-menu_serviceBox_item {
+      width: 313px;
+      height: 65px;
+      border: 1px solid #F4F4F4;
+      border-radius: 6px;
+      margin: 10px 0 0 30px;
+      padding: 15px 0 0 20px; }
+      .hidden-menu_serviceBox_item_header {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: none;
+        color: #181818;
+        font-weight: 500;
+        font-style: normal; }
+      .hidden-menu_serviceBox_item_text {
+        font-family: "Gotham Pro", sans-serif;
+        font-size: 10px;
+        line-height: 15px;
+        text-transform: none;
+        color: #181818;
+        font-weight: 100;
+        font-style: normal;
+        margin-top: 2px; }
+  .hidden-menu_premiumBtn {
+    width: 313px;
+    height: 65px;
+    background: linear-gradient(180deg, #D8C281 0%, #AC9B69 100%);
+    border-radius: 4px;
+    margin: 20px 0 0 30px;
+    padding: 15px 0 0 20px; }
+    .hidden-menu_premiumBtn_header {
+      font-family: "Gotham Pro", sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: none;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-style: normal; }
+    .hidden-menu_premiumBtn_text {
+      font-family: "Gotham Pro", sans-serif;
+      font-size: 10px;
+      line-height: 15px;
+      text-transform: none;
+      color: #FFFFFF;
+      font-weight: 100;
+      font-style: normal;
+      margin-top: 2px; }
 
 .hidden-menu-ticker {
   display: none; }
 
 .hidden-menu-ticker:checked ~ .menu-button {
-  right: 370px; }
+  right: 370px;
+  border: none;
+  border-left: 1px solid #F4F4F4; }
 
 .hidden-menu-ticker:checked ~ .hidden-menu {
   right: 0; }
-
-.hidden-menu-ticker:checked ~ .menu-button_image.first {
-  -webkit-transform: rotate(45deg); }
-
-.hidden-menu-ticker:checked ~ .menu-button_image.second {
-  opacity: 0; }
-
-.hidden-menu-ticker:checked ~ .menu-button_image.third {
-  background-image: url(images/header-img/x.png); }
 
 .profile-page {
   min-height: 100%;
@@ -557,7 +760,9 @@ input[type=text] {
 
 .edit-profile {
   width: 132px;
-  height: 36px; }
+  height: 36px;
+  font-weight: 300;
+  font-style: normal; }
   .edit-profile:hover {
     text-decoration: none;
     outline: none;
@@ -620,7 +825,9 @@ input[type=text] {
   font-size: 18px;
   line-height: 17px;
   text-transform: none;
-  color: #181818; }
+  color: #181818;
+  font-weight: bold;
+  font-style: normal; }
   .user-name_style {
     margin-top: 25px; }
 
@@ -649,7 +856,9 @@ input[type=text] {
   font-size: 12px;
   line-height: 150%;
   text-transform: none;
-  color: #181818; }
+  color: #181818;
+  font-weight: 300;
+  font-style: normal; }
   .user-location_style {
     margin: 26px 0 0 8px; }
 
@@ -661,7 +870,9 @@ input[type=text] {
     font-size: 14px;
     line-height: 21px;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 300;
+    font-style: normal; }
 
 .button {
   width: 170px;
@@ -672,6 +883,8 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-weight: 500;
+    font-style: normal;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
     border-radius: 4px; }
 
@@ -684,6 +897,8 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #0275B1;
+    font-weight: 500;
+    font-style: normal;
     background: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #0275B1;
@@ -711,7 +926,9 @@ input[type=text] {
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
-    color: #181818; }
+    color: #181818;
+    font-weight: 500;
+    font-style: normal; }
   .bookmark:focus {
     height: 50px;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
@@ -731,7 +948,9 @@ input[type=text] {
     line-height: 17px;
     text-transform: none;
     color: #181818;
-    margin: 30px 0 0 30px; }
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+    font-style: normal; }
   .about-field_text {
     width: 790px;
     height: 42px;
@@ -740,6 +959,8 @@ input[type=text] {
     line-height: 21px;
     text-transform: none;
     color: #181818;
+    font-weight: 300;
+    font-style: normal;
     margin: 15px 0 0 30px; }
   .about-field_link {
     font-family: "Gotham Pro", sans-serif;
@@ -747,6 +968,10 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #0275B1;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 500;
+    font-style: normal;
     margin: 20px 0 0 30px; }
     .about-field_link:hover {
       text-decoration: none;
@@ -772,6 +997,8 @@ input[type=text] {
       text-transform: none;
       color: #181818;
       margin: 30px 0 0 30px;
+      font-weight: bold;
+      font-style: normal;
       margin: 0; }
     .projects-box_header-field_counter {
       margin-left: 15px;
@@ -779,7 +1006,9 @@ input[type=text] {
       font-size: 18px;
       line-height: 17px;
       text-transform: none;
-      color: #747474; }
+      color: #747474;
+      font-weight: 300;
+      font-style: normal; }
   .projects-box_center-field {
     width: 790px;
     height: 216px;
@@ -790,6 +1019,8 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #0275B1;
+    font-weight: 500;
+    font-style: normal;
     margin: 25px 0 0 30px; }
     .projects-box_link:hover {
       text-decoration: none;
@@ -817,14 +1048,18 @@ input[type=text] {
     font-size: 14px;
     line-height: 21px;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 500;
+    font-style: normal; }
   .project-card_description {
     margin-top: 5px;
     font-family: "Gotham Pro", sans-serif;
     font-size: 10px;
     line-height: 15px;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 100;
+    font-style: normal; }
 
 .skills-box {
   width: 850px;
@@ -840,7 +1075,9 @@ input[type=text] {
     line-height: 17px;
     text-transform: none;
     color: #181818;
-    margin: 30px 0 0 30px; }
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+    font-style: normal; }
   .skills-box_center-field {
     width: 790px;
     height: 80px;
@@ -860,13 +1097,17 @@ input[type=text] {
           font-size: 14px;
           line-height: 21px;
           text-transform: none;
-          color: #181818; }
+          color: #181818;
+          font-weight: 500;
+          font-style: normal; }
         .skills-box_center-field_card_header-field_counter {
           font-family: "Gotham Pro", sans-serif;
           font-size: 14px;
           line-height: 21px;
           text-transform: none;
-          color: #0275B1; }
+          color: #0275B1;
+          font-weight: bold;
+          font-style: normal; }
       .skills-box_center-field_card_graphic-field {
         width: 210px;
         height: 24px;
@@ -931,6 +1172,8 @@ input[type=text] {
     line-height: 11px;
     text-transform: uppercase;
     color: #0275B1;
+    font-weight: 500;
+    font-style: normal;
     margin: 25px 0 0 30px; }
     .skills-box_link:hover {
       text-decoration: none;
@@ -952,6 +1195,8 @@ input[type=text] {
     text-transform: none;
     color: #181818;
     margin: 30px 0 0 30px;
+    font-weight: bold;
+    font-style: normal;
     margin: 30px 0 5px 30px; }
   .experience-box_dataField {
     width: 790px;
@@ -977,7 +1222,9 @@ input[type=text] {
         font-size: 14px;
         line-height: 21px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 500;
+        font-style: normal; }
       .experience-box_dataField_dataBox_employerField {
         width: 200px;
         height: 15px;
@@ -987,7 +1234,9 @@ input[type=text] {
           font-size: 10px;
           line-height: 15px;
           text-transform: none;
-          color: #181818; }
+          color: #181818;
+          font-weight: 300;
+          font-style: normal; }
         .experience-box_dataField_dataBox_employerField_employerLocation {
           margin-left: 10px;
           margin-left: 10px;
@@ -995,7 +1244,9 @@ input[type=text] {
           font-size: 10px;
           line-height: 15px;
           text-transform: none;
-          color: #181818; }
+          color: #181818;
+          font-weight: 100;
+          font-style: normal; }
       .experience-box_dataField_dataBox_periodField {
         width: 170px;
         height: 15px;
@@ -1005,14 +1256,18 @@ input[type=text] {
           font-size: 10px;
           line-height: 15px;
           text-transform: none;
-          color: #181818; }
+          color: #181818;
+          font-weight: 100;
+          font-style: normal; }
         .experience-box_dataField_dataBox_periodField_periodCounter {
           margin-left: 10px;
           font-family: "Gotham Pro", sans-serif;
           font-size: 10px;
           line-height: 15px;
           text-transform: none;
-          color: #0275B1; }
+          color: #0275B1;
+          font-weight: 500;
+          font-style: normal; }
       .experience-box_dataField_dataBox_description {
         width: 719px;
         height: 30px;
@@ -1021,7 +1276,9 @@ input[type=text] {
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
   .experience-box_divisionLine {
     width: 790px;
     height: 1px;
@@ -1042,7 +1299,9 @@ input[type=text] {
     line-height: 17px;
     text-transform: none;
     color: #181818;
-    margin: 30px 0 0 30px; }
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+    font-style: normal; }
   .education-box_dataField {
     width: 790px;
     height: 106px;
@@ -1064,28 +1323,36 @@ input[type=text] {
         font-size: 14px;
         line-height: 21px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 500;
+        font-style: normal; }
       .education-box_dataField_dataBox_degree {
         margin-top: 10px;
         font-family: "Gotham Pro", sans-serif;
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
       .education-box_dataField_dataBox_period {
         margin-top: 5px;
         font-family: "Gotham Pro", sans-serif;
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 100;
+        font-style: normal; }
       .education-box_dataField_dataBox_description {
         margin-top: 10px;
         font-family: "Gotham Pro", sans-serif;
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
 
 .dashboard {
   width: 290px;
@@ -1104,14 +1371,18 @@ input[type=text] {
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
-      color: #181818; }
+      color: #181818;
+      font-weight: 500;
+      font-style: normal; }
     .dashboard_headerField_link {
       font-family: "Gotham Pro", sans-serif;
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
       color: #0275B1;
-      text-decoration-line: underline; }
+      text-decoration-line: underline;
+      font-weight: 500;
+      font-style: normal; }
       .dashboard_headerField_link:hover {
         text-decoration: none;
         outline: none;
@@ -1127,14 +1398,18 @@ input[type=text] {
     font-size: 52px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #0275B1; }
+    color: #0275B1;
+    font-weight: 500;
+    font-style: normal; }
   .dashboard_text {
     margin-left: 30px;
     font-family: "Gotham Pro", sans-serif;
     font-size: 14px;
     line-height: 21px;
     text-transform: none;
-    color: #181818; }
+    color: #181818;
+    font-weight: 300;
+    font-style: normal; }
 
 .visitors {
   width: 290px;
@@ -1153,13 +1428,17 @@ input[type=text] {
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
-      color: #181818; }
+      color: #181818;
+      font-weight: 500;
+      font-style: normal; }
     .visitors_headerField_link {
       font-family: "Gotham Pro", sans-serif;
       font-size: 12px;
       line-height: 11px;
       text-transform: uppercase;
-      color: #0275B1; }
+      color: #0275B1;
+      font-weight: 500;
+      font-style: normal; }
       .visitors_headerField_link:hover {
         text-decoration: none;
         outline: none;
@@ -1201,13 +1480,17 @@ input[type=text] {
         font-size: 14px;
         line-height: 13px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: bold;
+        font-style: normal; }
       .visitors_card_textField_position {
         font-family: "Gotham Pro", sans-serif;
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
 
 .courses {
   width: 290px;
@@ -1223,7 +1506,9 @@ input[type=text] {
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
-    color: #181818; }
+    color: #181818;
+    font-weight: 500;
+    font-style: normal; }
   .courses_divisionLine {
     width: 230px;
     height: 1px;
@@ -1272,20 +1557,26 @@ input[type=text] {
         font-size: 14px;
         line-height: 18px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: bold;
+        font-style: normal; }
       .courses_videoCard_textField_viewers {
         font-family: "Gotham Pro", sans-serif;
         font-size: 10px;
         line-height: 15px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
   .courses_link {
     margin: 25px 0 0 30px;
     font-family: "Gotham Pro", sans-serif;
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
-    color: #0275B1; }
+    color: #0275B1;
+    font-weight: 500;
+    font-style: normal; }
     .courses_link:hover {
       text-decoration: none;
       outline: none;
@@ -1326,7 +1617,9 @@ input[type=text] {
       font-size: 12px;
       line-height: 11px;
       text-transform: none;
-      color: #181818; }
+      color: #181818;
+      font-weight: 500;
+      font-style: normal; }
     .footer_navigation_linkRow_linkBox {
       width: 135px;
       height: 86px;
@@ -1336,7 +1629,9 @@ input[type=text] {
         font-size: 12px;
         line-height: 11px;
         text-transform: none;
-        color: #181818; }
+        color: #181818;
+        font-weight: 300;
+        font-style: normal; }
         .footer_navigation_linkRow_linkBox_link:hover {
           text-decoration: none;
           outline: none;
@@ -1351,6 +1646,8 @@ input[type=text] {
       line-height: 11px;
       text-transform: none;
       color: #181818;
+      font-weight: 500;
+      font-style: normal;
       margin-bottom: 13px; }
     .footer_fastAccess_questionsButton {
       width: inherit;
@@ -1362,6 +1659,8 @@ input[type=text] {
       line-height: 11px;
       text-transform: uppercase;
       color: #FFFFFF;
+      font-weight: 500;
+      font-style: normal;
       padding: 0 8px 0 15px;
       margin-top: 10px; }
       .footer_fastAccess_questionsButton_image {
@@ -1382,6 +1681,8 @@ input[type=text] {
       line-height: 11px;
       text-transform: uppercase;
       color: #0275B1;
+      font-weight: 500;
+      font-style: normal;
       padding: 0 8px 0 15px;
       margin-top: 10px; }
       .footer_fastAccess_settingsButton_image {
@@ -1400,7 +1701,9 @@ input[type=text] {
       font-size: 12px;
       line-height: 11px;
       text-transform: none;
-      color: #181818; }
+      color: #181818;
+      font-weight: 500;
+      font-style: normal; }
     .footer_language_button {
       width: 270px;
       height: 32px;
@@ -1413,6 +1716,8 @@ input[type=text] {
       line-height: 11px;
       text-transform: uppercase;
       color: #181818;
+      font-weight: 500;
+      font-style: normal;
       margin-top: 23px;
       padding: 0 9px 0 15px; }
       .footer_language_button_image {
@@ -1429,12 +1734,20 @@ input[type=text] {
   margin-left: 10px;
   margin-right: 0; }
 
+.dropdown-menu_footer {
+  width: 270px;
+  height: 75px;
+  margin-top: 2px;
+  padding-top: 10px; }
+
 .dropdown-item {
   font-family: "Gotham Pro", sans-serif;
   font-size: 12px;
   line-height: 11px;
   text-transform: uppercase;
-  color: #181818; }
+  color: #181818;
+  font-weight: 500;
+  font-style: normal; }
 
 * {
   padding: 0;

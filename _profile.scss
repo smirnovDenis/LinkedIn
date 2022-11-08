@@ -53,6 +53,7 @@
 }}
 .edit-profile{
 	@include blockSize (132px, 36px);
+	@include regularFont;
 
 	&:hover{
 		@include link-reset(#181818);
@@ -104,6 +105,7 @@
 }
 .user-name{
 	@include menuFont($fontFamily, 18px, 17px, none, #181818);
+	@include boldFont;
 
 	&_style{
 		margin-top: 25px;
@@ -126,6 +128,7 @@
 }}
 .user-location{
 	@include menuFont($fontFamily, 12px, 150%, none, #181818);
+	@include regularFont;
 
 	&_style{
 		margin: 26px 0 0 8px;
@@ -135,12 +138,14 @@
 
 	&_style{
 		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+		@include regularFont;
 }}
 .button{
 	@include blockSize (170px, 32px);
 
 	&_style{
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #FFFFFF);
+		@include mediumFont;
 		@include buttonStyle;
 }}
 .button-inv{
@@ -148,6 +153,7 @@
 
 	&_style{
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+		@include mediumFont;
 		@include buttonStyleInv;
 		margin-left: 15px;
 }}
@@ -169,6 +175,7 @@
 		background: $bgColor;
 		border: 1px solid #E7E7E7;
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		@include mediumFont;
 	}
 	&:focus{
 		height:	50px;
@@ -190,10 +197,12 @@
 	&_text{
 		@include blockSize (790px, 42px);
 		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+		@include regularFont;
 		margin: 15px 0 0 30px;
 	}
 	&_link{
 		@include linkStyle;
+		@include mediumFont;
 		margin: 20px 0 0 30px;
 
 		&:hover{
@@ -219,6 +228,7 @@
 		&_counter{
 			margin-left: 15px;
 			@include menuFont($fontFamily, 18px, 17px, none, #747474);
+			@include regularFont;
 	}}
 	&_center-field{
 		@include blockSize (790px, 216px);
@@ -251,10 +261,12 @@
 	&_header{
 		margin-top: 15px;
 		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+		@include mediumFont;
 	}
 	&_description{
 		margin-top: 5px;
 		@include menuFont($fontFamily, 10px, 15px, none, #181818);
+		@include lightFont;
 }}
 .skills-box{
 	@include blockSize (850px, 220px);
@@ -284,10 +296,12 @@
 
 				&_header{
 					@include menuFont($fontFamily, 14px, 21px, none, #181818);
+					@include mediumFont;
 
 				}
 				&_counter{
 					@include menuFont($fontFamily, 14px, 21px, none, #0275B1);
+					@include boldFont;
 				}
 			}
 			&_graphic-field{
@@ -395,6 +409,7 @@
 
 			&_header{
 				@include menuFont($fontFamily, 14px, 21px, none, #181818);
+				@include mediumFont;
 			}
 			&_employerField{
 				@include blockSize (200px, 15px);
@@ -402,11 +417,13 @@
 
 				&_employerName{
 					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+					@include regularFont;
 				}
 				&_employerLocation{
 					margin-left: 10px;
 					margin-left: 10px;
 					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+					@include lightFont;
 			}}
 			&_periodField{
 				@include blockSize (170px, 15px);
@@ -414,16 +431,19 @@
 
 				&_period{
 					@include menuFont($fontFamily, 10px, 15px, none, #181818);
+					@include lightFont;
 				}
 				&_periodCounter{
 					margin-left: 10px;
 					@include menuFont($fontFamily, 10px, 15px, none, #0275B1);
+					@include mediumFont;
 				}
 			}
 			&_description{
 				@include blockSize (719px, 30px);
 				margin-top: 10px;
 				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				@include regularFont;
 			}}}
 	&_divisionLine{
 		@include blockSize (790px, 1px);
@@ -458,18 +478,22 @@
 
 			&_header{
 				@include menuFont($fontFamily, 14px, 21px, none, #181818);
+				@include mediumFont;
 			}
 			&_degree{
 				margin-top: 10px;
 				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				@include regularFont;
 			}
 			&_period{
 				margin-top: 5px;
 				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				@include lightFont;
 			}
 			&_description{
 				margin-top: 10px;
 				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				@include regularFont;
 }}}}
 .dashboard{
 	@include blockSize (290px, 360px);
@@ -486,10 +510,12 @@
 
 		&_header{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+			@include mediumFont;
 		}
 		&_link{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
 			text-decoration-line: underline;
+			@include mediumFont;
 
 			&:hover{
 				@include link-reset(#0275B1);
@@ -502,10 +528,12 @@
 	&_views, &_post, &_search{
 		margin: 20px 0 0 30px;
 		@include menuFont($fontFamily, 52px, 50px, uppercase, #0275B1);
+		@include mediumFont;
 	}
 	&_text{
 		margin-left: 30px;
 		@include menuFont($fontFamily, 14px, 21px, none, #181818);
+		@include regularFont;
 }}
 .visitors{
 	@include blockSize (290px, 427px);
@@ -522,9 +550,11 @@
 
 		&_header{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+			@include mediumFont;
 		}
 		&_link{
 			@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+			@include mediumFont;
 			
 			&:hover{
 				@include link-reset(#0275B1);
@@ -569,9 +599,11 @@
 		
 		&_name{
 			@include menuFont($fontFamily, 14px, 13px, none, #181818);
+			@include boldFont;
 		}
 		&_position{
 			@include menuFont($fontFamily, 10px, 15px, none, #181818);
+			@include regularFont;
 }}}}
 .courses{
 	@include blockSize (290px, 338px);
@@ -585,6 +617,7 @@
 	&_header{
 		margin: 25px 0 0 30px;
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #181818);
+		@include mediumFont;
 	}
 	&_divisionLine{
 		@include blockSize (230px, 1px);
@@ -628,14 +661,17 @@
 				@include link-reset(#181818);
 			}
 			&_name{
-				@include menuFont($fontFamily, 14px, 18px, none, #181818);	
+				@include menuFont($fontFamily, 14px, 18px, none, #181818);
+				@include boldFont;	
 			}
 			&_viewers{
 				@include menuFont($fontFamily, 10px, 15px, none, #181818);
+				@include regularFont;
 	}}}
 	&_link{
 		margin: 25px 0 0 30px;
 		@include menuFont($fontFamily, 12px, 11px, uppercase, #0275B1);
+		@include mediumFont;
 
 		&:hover{
 			@include link-reset(#0275B1);
